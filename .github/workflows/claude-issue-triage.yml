@@ -43,6 +43,7 @@ jobs:
         id: triage
         uses: anthropics/claude-code-action@v1
         with:
+          show_full_output: true
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_non_write_users: "*"
